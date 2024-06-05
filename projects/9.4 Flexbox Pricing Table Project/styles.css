@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Sono";
+    src: url(./assets/fonts/Sono-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sono";
+    src: url(./assets/fonts/Sono-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: "Sono", sans-serif;
+    background: radial-gradient(circle, #354bb6 0%, #140d38 100%);
+  }
+
+  .pricing-container {
+    height: 100vh;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    font-weight: bold;
+  }
+
+  .pricing-plan {
+    background: linear-gradient(135deg, #5c0f0f 0%, #ac1c1c 80%);
+    padding: 10px;
+    border-radius: 5%;
+    text-align: center;
+    border: 5px solid #ac1c1c;
+    flex: 1;
+    max-width: 400px;
+  }
+
+  .pricing-plan:hover {
+    border-color: #5c0f0f;
+  }
+
+  .plan-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .plan-price {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .plan-features {
+    list-style: none;
+    text-align:left;
+    text-shadow: none;
+  }
+
+  .plan-button {
+    border: 2px solid white;
+    background-color: #5c0f0f;
+    border-radius: 15%;
+    padding: 8px;
+    color: white
+  }
+
+  li {
+    margin-bottom: 20px;
+  }
+
+  /* Hint: What can you do with a media query and flexbox? */
+  @media (max-width: 1250px) {
+    .pricing-container {
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .pricing-plan {
+        min-width: 300px;
+    }
+  }
