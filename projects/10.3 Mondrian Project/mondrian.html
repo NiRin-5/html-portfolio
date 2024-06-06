@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIET MONDRIAN</title>
+    <style>
+
+/*
+white: #eeeef0
+red: #ef170b
+blue: #005ea6
+yellow: #ffe76d
+*/
+
+        .container {
+            display: grid;
+            grid-template-columns: 100px 310px 35px;
+            grid-template-rows: 160px 170px 50px 50px;
+            gap: 15px;
+            background-color: black;
+            height: 475px;
+            width: 475px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .item {
+            background-color: #eeeef0;
+        }
+
+        .white1 {
+            border-bottom: 15px solid black;;
+        }
+
+        .red {
+            background-color: #ef170b;
+            grid-area: 1 / 2 / 3 / 4;
+        }
+
+        .blue {
+            background-color: #005ea6;
+            grid-row: span 2;
+        }
+
+        .white2 {
+            grid-area: 3 / 2 / 5 / 3;
+        }
+
+        .white3 {
+            border-bottom: 5px solid black;
+        }
+
+        .yellow {
+            background-color: #ffe76d;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item white1"></div>
+        <div class="item"></div>
+        <div class="item red"></div>
+
+        <div class="item blue"></div>
+        <div class="item white2"></div>
+        <div class="item white3"></div>
+        <div class="item yellow"></div>
+    </div>
+</body>
+
+</html>
